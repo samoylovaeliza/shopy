@@ -1,0 +1,165 @@
+/* ==========================================================================
+   Base styles
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
+  
+  /*
+   * Remove text-shadow in selection highlight:
+   *
+   * Vendor-prefixed and regular ::selection selectors cannot be combined
+   */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+  
+  /*
+   * A better looking default horizontal rule
+   */
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  /*
+   * Remove the gap between audio, canvas, iframes,
+   * images, videos and the bottom of their containers:
+   */
+  
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+  
+  /*
+   * Remove default fieldset styles.
+   */
+  
+  fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*
+   * Allow only vertical resizing of textareas.
+   */
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* ==========================================================================
+     Browser Upgrade Prompt
+     ========================================================================== */
+  
+  .browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+  }
+  
+  /* ==========================================================================
+     * Basic styles
+     ========================================================================== */
+
+
+header {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 20px 5%;
+    background: transparent;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+  }
+
+  .mail_phone-wrap {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+    font-size: 10px;
+    padding-top: 10px;
+  }
+
+  .social-media_wrap {
+    text-align: end;
+    width: 100%;
+    
+  }
+
+  .fab {
+      padding: 0 10px;
+      font-size: 10px;
+      color: #000;
+  }
+
+  .divider {
+    height: 1px;
+    background-color: #e0e0e0;
+  }
+  .nav-wrap {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    height: 100px;
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .nav {
+    margin-left: 20px;
+  }
+  .nav-item {
+    color: #000;
+    padding: 0 20px;
+  }
+
+  .nav-item:hover {
+      color: orange;
+      text-decoration: none;
+  }
+
+  .title-wrap {
+      display: block;
+      position: relative;
+      text-align: center;
+      height: 200px;
+      align-items: center;
+  }
+  .bg-grey {
+    background-color: #f5f3f3;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 50px; 
+  }
+
+  .orange {
+      color: orange;
+  }
