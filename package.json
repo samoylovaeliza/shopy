@@ -1,0 +1,19 @@
+{
+  "name": "shopy",
+  "version": "1.0.0",
+  "description": "A main page diplaying products from JSON data using Fake JSON",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samoylovaeliza/shopy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samoylovaeliza/shopy/issues"
+  },
+  "homepage": "https://github.com/samoylovaeliza/shopy#readme"
+}

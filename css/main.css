@@ -265,6 +265,7 @@ header {
   background-color: #fff;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 50px;
 }
 
 .subscribe_text {
@@ -301,14 +302,29 @@ header {
   cursor: pointer;
 }
 
+footer {
+  font-family: 'Lato', sans-serif;
+  margin: 70px 0;
+}
 .footer_nav_wrap {
   position: relative;
   display: flex;
-  justify-content: space-evenly;
-
+  align-items: center;
 }
 
+.footer_nav {
+  margin-left: 150px;
+}  
+
 .footer_nav_item {
+  font-family: 'Montserrat', sans-serif;
   position: relative;
   display: inline-block;
+  font-size: 10px;
+  text-decoration: none;
+  color: #000;
+}
+
+.footer_nav_item:hover {
+  color: #ff914d;
 }
