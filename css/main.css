@@ -180,12 +180,22 @@ header {
 
 .item {
   display: inline-block;
+  position: relative;
   font-size: 30px;
-  justify-content: center;
   background-color: #fff;
-  height: 300px;
-  width: 200px;
-  
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.item_visible {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.item_visible:hover {
+  opacity: 0;
 }
 
 .item_img {
@@ -193,7 +203,8 @@ header {
   width: auto;
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-image: url(../img/jack.png);
+  background-size: 80%;
   margin-top: 20px;
 }
 
