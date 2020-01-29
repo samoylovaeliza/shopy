@@ -97,14 +97,24 @@ xhr.onload = function() {
             }
             document.getElementById(`stars_wrap${i}`).appendChild(star);
           };
-
           document.getElementById(`item_info${i}`).appendChild(order_btn);
-
           
           
+          jQuery(document).ready(function(){
+            $(".item").on("mouseenter", function() {
+              $(this.children[0]).show('slow');
+              $(this.children[1]).hide('slow');
+            });
+            
+            $(".item").on("mouseleave", function() {
+              $(this.children[1]).show('slow');
+              $(this.children[0]).hide('slow');
+            });
+          });
       }
     };
   }
+  
   };
 
-
+  

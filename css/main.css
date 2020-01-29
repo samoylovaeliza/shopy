@@ -102,7 +102,9 @@ header {
     font-family: 'Lato', sans-serif;
     color: #000;
   }
-
+button {
+  cursor: pointer;
+}
   .mail_phone-wrap {
     display: flex;
     width: 200px;
@@ -172,7 +174,7 @@ header {
   }
 
 .items_wrap {
-  display: flex;
+  display: block;
   position: relative;
   justify-content: space-evenly;
   width: 1110px;
@@ -182,30 +184,32 @@ header {
   display: inline-block;
   position: relative;
   font-size: 30px;
-  background-color: #fff;
+  background-color: #fff !important;
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+  height: 322.5px;
+  padding: 15px 0;
+  margin-bottom: 30px;
 }
 
 .item_info {
-  position: absolute;
+  position: relative;
+  display: none;
   width: 100%;
-  height: auto;
+  height: 290px;
+  background-color: #fff;
+  margin-bottom: -30px;
 }
 
 .item_visible {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 302.5px;
   z-index: 5;
   background-color: #fff;
-  transition: opacity 0.3s ease;
+  
 }
 
-.item_visible:hover {
-  opacity: 0;
-}
+
 
 .item_img {
   height: 200px;
@@ -214,14 +218,14 @@ header {
   background-repeat: no-repeat;
   background-image: url(../img/jack.png);
   background-size: 80%;
-  margin-top: 20px;
 }
 .item_info_text {
   text-align: center;
-  margin-top: 30px;
+  padding-bottom: 8px;
 }
 .item_text {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .stars_wrap {
@@ -230,7 +234,8 @@ header {
   font-size: 14px;
   color: #888888;
   text-align: center;
-  margin: 20px 0;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
 .order_btn {
@@ -244,13 +249,11 @@ header {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  cursor: pointer;
   margin-left: 30%;
+  margin-bottom: 0;
 }
 
-.order_btn:hover {
-  z-index: 5;
-}
+
 .adv {
   display: flex;
   justify-content: center;
@@ -349,7 +352,6 @@ header {
   color: #fff;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  cursor: pointer;
 }
 
 footer {
