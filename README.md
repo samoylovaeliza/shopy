@@ -1,2 +1,2 @@
 # shopy
-A main page diplaying products from JSON data using Fake JSON
+A main page displaying products from JSON data using Fake JSON
