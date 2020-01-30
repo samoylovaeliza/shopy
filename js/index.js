@@ -1,4 +1,6 @@
-//var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
+// In this JS code we get all information about items using XMLHttpRequest.
+// Then we create the HTML-code for each item and fill it with data from JSON file.
 var xhr = new XMLHttpRequest();
 var myURL = 'https://app.fakejson.com/q/6NyONp5Y';
 var token = 'Gfce9JoM4L6XSxiifVT_jw';
@@ -8,13 +10,17 @@ xhr.onload = function() {
   if (xhr.status != 200) { 
     console.log(`Ошибка ${xhr.status}: ${xhr.statusText}`); 
   } else {
-    // console.log(`JSON: ${xhr.responseText}`);
+
     var goods = JSON.parse(xhr.responseText)["goods"];
     if (goods.length > 0) {
-       for (var i = 0; i < goods.length; i++) {
+      for (var i = 0; i < goods.length; i++) {
+
+          // Creating Bootstrap grid columns
           var col = document.createElement('div');
           col.className = 'col-md-3';
           col.id = `col${i}`;
+
+          // Creating the main item wrapper, info wrapper and visible wrapper
           var item = document.createElement('div');
           item.className = 'item';
           item.id = `item${i}`;
@@ -27,6 +33,8 @@ xhr.onload = function() {
           item_visible.className = 'item_visible';
           item_visible.id = `item_visible${i}`;
 
+          // Creating the image for an item, fields for its name, price, quantity,
+          // sizes, rating and order button. 
           var item_img = document.createElement('div');
           item_img.className = 'item_img';
 
@@ -67,18 +75,14 @@ xhr.onload = function() {
           var stars_wrap = document.createElement('div');
           stars_wrap.className = "stars_wrap";
           stars_wrap.id = `stars_wrap${i}`;
-          //var star = document.createElement('i');
-          //star.className = "fas fa-star";
           var rating = parseInt(goods[i]["rating"]);
 
-
+          // Adding all elements to the HTML-document
           document.getElementById("goods").appendChild(col);
 
           document.getElementById(`col${i}`).appendChild(item);
           document.getElementById(`item${i}`).appendChild(item_info);
           document.getElementById(`item${i}`).appendChild(item_visible);
-
-
 
           document.getElementById(`item_visible${i}`).appendChild(item_img);
           document.getElementById(`item_visible${i}`).appendChild(item_name_vis);
@@ -89,6 +93,7 @@ xhr.onload = function() {
           document.getElementById(`item_info${i}`).appendChild(item_size);
           document.getElementById(`item_info${i}`).appendChild(stars_wrap);
 
+          // A loop for filling in the rating field
           for (var j = 0; j < 5; j++) {
             var star = document.createElement('i');
             star.className = "fas fa-star";
@@ -99,7 +104,7 @@ xhr.onload = function() {
           };
           document.getElementById(`item_info${i}`).appendChild(order_btn);
           
-          
+          // jQuery code for hover effect on items
           jQuery(document).ready(function(){
             $(".item").on("mouseenter", function() {
               $(this.children[0]).show('slow');
@@ -114,7 +119,6 @@ xhr.onload = function() {
       }
     };
   }
-  
-  };
+};
 
   
